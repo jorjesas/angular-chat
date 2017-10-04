@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+
+import { UsersService } from './_services/users.service';
+import { ThreadsService } from './_services/threads.service';
+import { MessagesService } from './_services/messages.service';
+
+import { ChatExampleData } from './_helpers/chat-example-data';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +12,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  
+  constructor(public messagesService: MessagesService,
+    public threadsService: ThreadsService,
+    public usersService: UsersService) {
+      ChatExampleData.init(messagesService, threadsService, usersService);
+  }
+
 }

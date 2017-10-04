@@ -1,10 +1,15 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { ChatPageComponent } from './chat-page/chat-page.component';
+
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        ChatPageComponent
       ],
     }).compileComponents();
   }));
