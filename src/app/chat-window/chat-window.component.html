@@ -1,4 +1,4 @@
-<div class="chat-window-container">
+<div class="col-md-6 chat-window-container">
   <div class="chat-window">
     <div class="panel-container">
       <div class="panel panel-default">
@@ -30,7 +30,7 @@
           (keydown.enter)="onEnter($event)"
           [(ngModel)]="draftMessage.text" />
           <span class="input-group-btn">
-            <button class="btn-chat"
+            <button class="btn btn-success btn-chat"
             (click)="onEnter($event)"
             >Send</button>
           </span>

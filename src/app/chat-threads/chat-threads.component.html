@@ -1,11 +1,16 @@
 <!-- conversations -->
-<div class="row">
+<div class="col-md-4 col-md-offset-2">
   <div class="conversation-wrap">
 
+    <div class="container-threads-search">
+        <input [(ngModel)]="query" type="text" placeholder="Search users" class="input-thread-search">
+    </div>
+
+    <div class="container-threads-wrap">
     <app-chat-thread
-         *ngFor="let thread of threads | async"
+         *ngFor="let thread of threads | async | searchfilter: 'name' : query"
          [thread]="thread">
     </app-chat-thread>
-
+    </div>
   </div>
 </div>

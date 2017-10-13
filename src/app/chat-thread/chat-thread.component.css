@@ -1,0 +1,23 @@
+.media {
+    padding: 5px 0;
+}
+
+.conversation-box {
+    border: 2px solid deepskyblue;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contact-name {
+    color: deepskyblue;
+    font-size: 14px;
+    font-weight: bold; 
+}
+
+.message-preview {
+    font-style: italic;
+}
+
+.contact-select {
+    
+}

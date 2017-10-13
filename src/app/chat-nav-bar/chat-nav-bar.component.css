@@ -1,0 +1,5 @@
+.navbar-brand>img {
+    display: inline-block;
+    width: 40px;
+    height: auto;
+}

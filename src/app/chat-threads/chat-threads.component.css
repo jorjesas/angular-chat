@@ -1,0 +1,23 @@
+.conversation-wrap {
+    border: 1px solid black;
+    height: 500px;
+}
+
+.container-threads-search {
+    width: 250px;
+    margin: auto;
+    padding: 10px 0;
+    border-bottom: 5px solid deepskyblue;
+}
+
+.container-threads-search input {
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+
+
+.container-threads-wrap {
+    height: 90%;
+    overflow: scroll;
+}

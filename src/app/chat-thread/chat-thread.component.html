@@ -1,4 +1,5 @@
 <div class="media conversation">
+  <div class = "conversation-box">
   <div class="pull-left">
     <img class="media-object avatar"
          src="{{thread.avatarSrc}}">
@@ -9,5 +10,6 @@
     </h5>
     <small class="message-preview">{{thread.lastMessage.text}}</small>
   </div>
-  <a (click)="clicked($event)" class="div-link">Select</a>
-</div> 
+  <a (click)="clicked($event)" class="btn btn-primary btn-contact-select">Select</a>
+  </div> 
+</div>
